@@ -17,7 +17,7 @@
 ## along with this library.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-BINARY = actuator
+BINARY = smart_motor_switch
 
 LDSCRIPT = stm32f072cb.ld
 
