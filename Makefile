@@ -19,7 +19,7 @@
 
 BINARY = actuator
 
-LDSCRIPT = stm32f0-discovery.ld
+LDSCRIPT = stm32f072cb.ld
 
 LIBNAME		= opencm3_stm32f0
 DEFS		= -DSTM32F0
@@ -32,7 +32,7 @@ ARCH_FLAGS	= -mthumb -mcpu=cortex-m0 $(FP_FLAGS)
 
 OOCD		?= openocd
 OOCD_INTERFACE	?= stlink-v2
-OOCD_BOARD	?= stlink-v2_f0
+OOCD_BOARD	?= stm32f0discovery
 
 ################################################################################
 # Black Magic Probe specific variables
@@ -103,7 +103,7 @@ SCRIPT_DIR	= $(OPENCM3_DIR)/scripts
 ###############################################################################
 # C flags
 
-CFLAGS		+= -Os -g
+CFLAGS		+= -Os -g -std=gnu99
 CFLAGS		+= -Wextra -Wshadow -Wimplicit-function-declaration
 CFLAGS		+= -Wredundant-decls -Wmissing-prototypes -Wstrict-prototypes
 CFLAGS		+= -fno-common -ffunction-sections -fdata-sections
