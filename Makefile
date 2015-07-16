@@ -17,7 +17,7 @@
 ## along with this library.  If not, see <http://www.gnu.org/licenses/>.
 ##
 
-BINARY = smart_motor_switch
+BINARY = diver_interface_board
 
 LDSCRIPT = stm32f072cb.ld
 
