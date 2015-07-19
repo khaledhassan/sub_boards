@@ -41,7 +41,7 @@ BMP_PORT	?=
 
 ################################################################################
 # texane/stlink specific variables
-#STLINK_PORT	?= :4242
+STLINK_PORT	?= :4242
 
 
 # Be silent per default, but 'make V=1' will show all compiler calls.
@@ -111,7 +111,7 @@ CFLAGS		+= -fno-common -ffunction-sections -fdata-sections
 ###############################################################################
 # C++ flags
 
-CXXFLAGS	+= -Os -g
+CXXFLAGS	+= -Os -g -std=c++11
 CXXFLAGS	+= -Wextra -Wshadow -Wredundant-decls  -Weffc++
 CXXFLAGS	+= -fno-common -ffunction-sections -fdata-sections
 
